@@ -1,0 +1,11 @@
+[submodule "task-man"]
+	path = task-man
+	url = https://github.com/lzytourist/task-man.git
+[submodule "tasks-man-front"]
+	path = task-man-front
+	url = https://github.com/lzytourist/task-man-front.git
+
+	
+[submodule "task-man-front"]
+	path = task-man-front
+	url = https://github.com/lzytourist/task-man-front.git
