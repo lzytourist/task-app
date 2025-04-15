@@ -9,8 +9,8 @@ services:
 #    command: bash -c "python manage.py migrate && python manage.py setup && python manage.py runserver 0.0.0.0:8000"
 #    command: bash -c "python manage.py runserver 0.0.0.0:8000"
     command: sh -c "if [ \"$RUN_MIGRATIONS\" = 'true' ]; then python manage.py migrate && python manage.py setup; fi && python manage.py runserver 0.0.0.0:8000"
-    volumes:
-      - ./task-man:/app
+#    volumes:
+#      - ./task-man:/app
     env_file:
       - .env
     ports:
@@ -61,10 +61,10 @@ services:
 
   frontend:
     build: ./task-man-front
-    command: sh -c "npm install --legacy-peer-deps && npm run build && npm start"
+#    command: sh -c "npm install --legacy-peer-deps && npm run build && npm start"
     container_name: task_frontend
-    volumes:
-      - ./task-man-front:/app
+#    volumes:
+#      - ./task-man-front:/app
     ports:
       - "3000:3000"
     environment:
